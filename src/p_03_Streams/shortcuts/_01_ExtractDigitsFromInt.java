@@ -2,16 +2,17 @@ package p_03_Streams.shortcuts;
 
 public class _01_ExtractDigitsFromInt {
     public static void main(String[] args) {
-        String word = "Hello";
-        System.out.println("Word : " + word);
+        int num = 2214;
+        System.out.println("Number : " + num);
 
-        System.out.println("Resulting Collection : " + word.chars()
-                .mapToObj(c -> (char) c)
+        System.out.println("SumOfDigits : " + String.valueOf(num).chars()
+                .map(Character::getNumericValue)
+                .boxed()
                 .toList()
         );
     }
 }
 
 //Output
-//Word : Hello
-//Resulting Collection : [H, e, l, l, o]
+//Number : 2214
+//SumOfDigits : [2, 2, 1, 4]

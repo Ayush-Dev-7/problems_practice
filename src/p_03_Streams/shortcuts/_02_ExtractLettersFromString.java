@@ -2,17 +2,16 @@ package p_03_Streams.shortcuts;
 
 public class _02_ExtractLettersFromString {
     public static void main(String[] args) {
-        int num = 2214;
-        System.out.println("Number : " + num);
+        String word = "Hello";
+        System.out.println("Word : " + word);
 
-        System.out.println("SumOfDigits : " + String.valueOf(num).chars()
-                .map(Character::getNumericValue)
-                .boxed()
+        System.out.println("Resulting Collection : " + word.chars()
+                .mapToObj(c -> (char) c)
                 .toList()
         );
     }
 }
 
 //Output
-//Number : 2214
-//SumOfDigits : [2, 2, 1, 4]
+//Word : Hello
+//Resulting Collection : [H, e, l, l, o]

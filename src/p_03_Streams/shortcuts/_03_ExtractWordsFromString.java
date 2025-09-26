@@ -14,5 +14,5 @@ public class _03_ExtractWordsFromString {
 }
 
 //Output
-//Number : 2214
-//SumOfDigits : [2, 2, 1, 4]
+//Number : Oh my my you oh you grown
+//Words : [Oh, my, my, you, oh, you, grown]
